@@ -1,0 +1,9 @@
+{% extends "cartao/base.html" %}
+
+{% block conteudo %}
+    <form method="POST" enctype="=multipart/form-data">
+    {% csrf_token %}
+    {{ form }}
+        <input type="subimit" value="Inserin" class="btn btn-sucess">
+    </form>
+{% endblock conteudo %}
